@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Browser จะมองว่าเป็นเว็บภาษาอังกฤษ -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page2</title>
+    </head>
+    <body>
+        <h1>Page2</h1>
+        <a href="index.html">Page1</a>
+        <form>
+            <!-- ส่งข้อมูลไปยัง server -->
+            <div>
+                <label for="username">Username</label>
+                <input
+                    id="username"
+                    name="username"
+                    type="text"
+                    placeholder="Username"
+                />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                />
+            </div>
+            <input type="hidden" />
+            <!-- ซ่อนข้อมูล -->
+            <button type="submit">Login</button>
+            <!-- ปุ่ม submit -->
+        </form>
+
+        <a href="#">Scroll to bottom</a>
+        <div style="height: 1000px"></div>
+        <div id="bottom">bottom</div>
+        <a href="#">Top</a>
+    </body>
+</html>

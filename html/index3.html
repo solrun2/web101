@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page3</title>
+    <style>
+
+        div {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .bg-yellow {
+            background-color: yellow;
+        }
+
+        #bg-orange {
+            background-color: orange;
+        }
+
+        .btn {
+            display: inline-block; /* ให้ปุ่มไม่เกยกับบรรทัดอื่น */
+            background-color: #0099ff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px; /* ขอบโค้ง */
+        }
+
+        .btn:hover {
+            background-color: red;
+        }
+        /* สีเมื่อเอาเมาส์ไปวาง */
+
+        .btn:focus {
+            background-color: rgb(255, 255, 255);
+            color: red;
+        }
+        /* สีเมื่อกด */
+
+        p {
+            color: palevioletred;
+        }
+
+        p::first-letter{
+            background: red;
+        }
+        /* สีของตัวอักษรแรก */
+
+        p::before {
+            content: "<< This is before";
+        }
+
+        p::after {
+            content: "<< This is after";
+        }
+
+        div>span {
+            color: blue;
+        }
+        /* สีของ span ที่อยู่ใน div */
+
+        body {
+            height: 2000px;
+            background-image:  url(https://cdn.britannica.com/71/234471-050-093F4211/shiba-inu-dog-in-the-snow.jpg);
+            background-repeat: no-repeat;
+            background-position: right top; /* ตำแหน่งภาพ */
+            background-attachment: fixed; /* ภาพคงที่ */
+            background-size: cover; /* ขนาดภาพ */
+        }
+
+        table, td  {
+            border-collapse: collapse; /* รวมขอบตาราง */
+            border: 1px solid black; /* ขนาดขอบ */
+        }
+
+        td {
+            text-align: center; /* จัดตำแหน่งตัวอักษร */
+            padding: 5px 10px;
+        }
+
+        .abs {
+            background-color: aquamarine;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        /* ตำแหน่งตัวอักษร */
+
+        .rel {
+            background-color: darkorange;
+            position: relative;
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg-yellow">
+        This is div
+    </div>
+    <div id="bg-orange">
+        This is div
+    </div>
+    <div>
+        This is div
+        <span>
+            Eiei
+        </span>
+    </div>
+    <p>
+        Hi
+    </p>
+    <a href="index2.html" class="btn">
+        Page2
+    </a>
+    <div>
+        <table>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+        </table>
+    </div>
+    
+
+    <div class="rel">
+        <div class="abs">
+            This is absolute
+        </div>
+    </div>
+    
+</body>
+</html>
